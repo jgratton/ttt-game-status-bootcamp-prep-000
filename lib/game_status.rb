@@ -43,7 +43,7 @@ def won?(board)
       return win_combo
     elsif board == Array.new(9, " ")
       return false
-    else
+    elsif full?(board)
       return false
     end
   end
